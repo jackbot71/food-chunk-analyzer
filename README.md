@@ -26,6 +26,8 @@ The processing of the segmentations (masks) is done using **OpenCV for Python**,
 
 NOTE: the notebook was written in Google Colab to make use of its free access to GPU to train the model, therefore the function **cv2.imshow** from OpenCV is always replaced by its Colab equivalent **cv2_imshow**, as the former makes Colab crash.
 
+The pictures for the project were annotated using the online tool [Make Sense](https://www.makesense.ai/).
+
 
 ## Project Motivation <a name='motivation'></a>
 
@@ -41,6 +43,7 @@ In this particular example, our objective is to:
 
 The code to fulfill these objectives was created on a Python notebook in Google Colab, as a GPU was necessary for the training of the models. The .ipynb notebook file containing all the code can be found on this repository.
 
+
 ## File Descriptions <a name='files'></a>
 
 * "Food_Chunk_Analyzer.ipynb": Jupyter notebook in which all the code to perform the tasks listed above can be found. Markdown cells throughout the code aim to guide the reader through the analysis and the choices that were made. NOTE: the notebook was written and used in Google Colab, with access to the training pictures and model outputs and weights via a mounted Google drive. If you wish to repeat the analysis using the notebook, make sure to change the paths to the training and testing datasets, as well as to the model files created.
@@ -48,12 +51,16 @@ The code to fulfill these objectives was created on a Python notebook in Google 
 * "Model training outputs.zip": zip file containing one folder per trained model (i.e. per number of training iterations), with in each folder the metrics recorded during training, as well as the tensorboard events record.
 * "Test results.zip": zip file containing one folder per trained model (i.e. per number of training iterations), with in each folder a .json file containing the COCO metrics from the evaluation of the model for a range of detection thresholds. 
 
+
 ## Results <a name='results'></a>
 
-Results and analysis are concisely explained in the Jupyter Notebook. A less technical overview of the results is presented in the Medium post [here](https://medium.com/@jackbot71/what-language-should-you-learn-as-a-data-scientist-173475523291).
+Results and analysis are concisely explained in the Jupyter Notebook.
+
+A much more comprehensive explanation of the approach and method followed, as well as an analysis of the results, can be found in [this](link to come) Medium blogpost I wrote.
+
 
 ## Licensing, Authors, and Acknowledgements <a name='licensing'></a>
 
-A great thank you to Stack Overflow for capturing this very interesting data, and making it publicly available. The data is licensed under the [Open Database License (ODbL) v1.0](https://opendatacommons.org/licenses/odbl/1.0/).
+A big thanks to all the team working on Detectron2, which is released under the [Apache 2.0 license](https://www.apache.org/licenses/LICENSE-2.0).
 
-The rest of the code found in the Notebook is free for anyone to use.
+The pictures for the training of the model were taken by myself.
