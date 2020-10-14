@@ -56,7 +56,7 @@ The code to fulfill these objectives was created on a Python notebook in Google 
 
 Results and analysis are concisely explained in the Jupyter Notebook.
 
-A much more comprehensive explanation of the approach and method followed, as well as an analysis of the results, can be found in [this](link to come) Medium blogpost I wrote.
+A much more comprehensive explanation of the approach and method followed, as well as an analysis of the results, can be found in [this](https://medium.com/@jackbot71/visual-quality-control-using-detectron2-479d818e4669) Medium blogpost I wrote.
 
 
 ## Licensing, Authors, and Acknowledgements <a name='licensing'></a>
